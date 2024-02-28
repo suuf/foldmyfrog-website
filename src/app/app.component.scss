@@ -1,21 +1,5 @@
 $accent-colour: #7cc760;
 
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-
-$primary: $accent-colour;
-
-// Merge $theme-colors map
-$theme-colors: map-merge(
-  $theme-colors,
-  (
-    "primary": $accent-colour,
-  )
-);
-
-// Save bootstrap changes
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
 .text-primary {
   color: $accent-colour !important;
   a,
